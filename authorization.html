@@ -7,23 +7,26 @@
     <title>Страница для авторизации</title>
 </head>
 <body>
-    <h1>Cтраница авторизации пользователя</h1>
-    <form method="post">
+    <h1>Авторизация</h1>
+    <form method="post" action="https://tests.fomenko.top/echo/index.php">
         <div>
             <label for="Email">Email</label>
-            <input id="Email" placeholder="123@gmail...">
+            <input name="Email" id="Email" placeholder="123@gmail...">
         </div>
         <div>
             <label for="password">Пароль</label>
-            <input id="password" type="password">
+            <input name="password1" id="password" type="password" placeholder="Пароль">
         </div>
         <div>
             <label for="checkbox">Запомнить пароль</label>
-            <input type="checkbox">
+            <input name="checkbox" id="checkbox" type="checkbox">
         </div>
         <div>
             <button type="submit">Войти</button>
         </div>
     </form>
+    <div>
+        <a href="./index.html">Вернуться на главную</a>
+    </div>
 </body>
 </html>
