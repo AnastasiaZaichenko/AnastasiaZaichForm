@@ -7,22 +7,22 @@
     <title>Страница регистрации</title>
 </head>
 <body>
-    <h1>Cтраница регистрации</h1>
-    <form method="get">
+    <h1>Регистрация</h1>
+    <form method="post" action="https://tests.fomenko.top/echo/index.php">
         <div>
             <label for="Email">Email</label>
-            <input id="Email" placeholder="123@gmail...">
+            <input name="Email" id="Email" placeholder="123@gmail..." maxlength="30">
         </div>
         <div>
             <label for="password">Пароль</label>
-            <input id="password" type="password">
+            <input name="password1" id="password" type="password" placeholder="Пароль">
         </div>
         <div>
-            <label for="password">Подтвердите пароль</label>
-            <input id="password" type="password">
+            <label for="password">Подтвердить пароль</label>
+            <input name="password2" id="password" type="password" placeholder="Повторите пароль">
         </div>
         <div>
-            <button type="submit">Подтвердить</button>
+            <button type="submit">Зарегистрироваться</button>
         </div>
     </form>
 </body>
